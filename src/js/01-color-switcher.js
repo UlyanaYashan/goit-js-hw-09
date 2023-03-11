@@ -12,7 +12,7 @@ elBtnStart.addEventListener('click', onStart);
 elBtnStop.addEventListener('click', onStop);
 
 function onStart() {
-timerID = setInterval(() => {
+ timerId = setInterval(() => {
 elBody.style.backgroundColor = getRandomHexColor();
 },1000)
 
@@ -21,7 +21,10 @@ elBtnStop.disabled = false
 }
 
 function onStop() {   
-    clearInterval(timerID);
+    clearInterval(timerId);
     elBtnStart.disabled = false;
     elBtnStop.disabled = true;
 }
+
+
+
