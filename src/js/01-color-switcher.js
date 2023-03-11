@@ -7,6 +7,7 @@ const elBtnStop = document.querySelector('button[data-stop]');
 const elBody = document.querySelector('body');
 
 elBtnStop.disabled = true;
+let timerId = null;
 
 elBtnStart.addEventListener('click', onStart);
 elBtnStop.addEventListener('click', onStop);
