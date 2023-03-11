@@ -17,7 +17,7 @@ elBody.style.backgroundColor = getRandomHexColor();
 },1000)
 
 elBtnStart.disabled = true;
-elBtnStop.disabled = false;
+elBtnStop.disabled = false
 }
 
 function onStop() {   
