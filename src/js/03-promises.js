@@ -13,6 +13,7 @@ form.addEventListener('submit', onSubmit);
 
 function onSubmit(e) {
  e.preventDefault();
+
  
   let delay = Number(delayInput.value);
   let delayStep = Number(step.value);
@@ -29,7 +30,7 @@ function onSubmit(e) {
   });
   delay += delayStep;
   }
-
+  form.reset();
 }
 
 function createPromise(position, delay) {
